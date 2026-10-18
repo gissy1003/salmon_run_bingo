@@ -1,0 +1,8 @@
+node_modules/
+_refactor_backup/
+
+# 開発用ビルド成果物 (本番は docs/ にコピーされる)
+template/js/main.dev.js
+template/css/style.dev.css
+template/css/*.map
+.claude/settings.local.json

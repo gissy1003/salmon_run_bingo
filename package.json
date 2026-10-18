@@ -1,0 +1,28 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -n js,css,php \"npm:watch:js\" \"npm:watch:css\" \"npm:serve\"",
+    "serve": "php -S localhost:8080 -t template",
+    "watch:js": "webpack --mode=development --watch",
+    "watch:css": "sass --watch template/css/style.scss template/css/style.dev.css",
+    "build:js": "webpack --mode=production",
+    "build:css": "sass --style=compressed --no-source-map template/css/style.scss template/css/style.min.css",
+    "build:html": "php html_template/make.php",
+    "typecheck": "tsc --noEmit",
+    "build": "npm run typecheck && npm run build:js && npm run build:css && npm run build:html"
+  },
+  "dependencies": {
+    "canvas-confetti": "^1.6.0",
+    "html2canvas": "^1.4.1"
+  },
+  "devDependencies": {
+    "@types/canvas-confetti": "^1.6.0",
+    "@types/html2canvas": "^1.0.0",
+    "concurrently": "^9.2.1",
+    "sass": "^1.105.2",
+    "ts-loader": "^9.6.2",
+    "typescript": "^5.2.2",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
+}

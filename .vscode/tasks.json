@@ -1,0 +1,27 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "dev (watch + php server)",
+            "type": "npm",
+            "script": "dev",
+            "isBackground": true,
+            "problemMatcher": [],
+            "group": "build"
+        },
+        {
+            "label": "build (docs/ に書き出し)",
+            "type": "npm",
+            "script": "build",
+            "problemMatcher": ["$tsc"],
+            "group": { "kind": "build", "isDefault": true }
+        },
+        {
+            "label": "typecheck",
+            "type": "npm",
+            "script": "typecheck",
+            "problemMatcher": ["$tsc"],
+            "group": "build"
+        }
+    ]
+}
