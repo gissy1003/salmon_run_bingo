@@ -2,6 +2,12 @@
 
 Splatoon3 のブキでビンゴを遊ぶツール。
 
+[takenocotoon/random_weapon_bingo_nw](https://github.com/takenocotoon/random_weapon_bingo_nw) を元に改変したものです。
+
+## ライセンス
+
+[MIT License](LICENSE)。ブキ画像などゲーム由来の素材の権利は各権利者に帰属します。
+
 ## 必要なもの
 
 - Node.js
